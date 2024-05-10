@@ -1,0 +1,203 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-size: 16px;
+    line-height: 1.5;
+
+    header {
+        background-color: #fff;
+        padding: 20px 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+            text-align: center;
+        }
+
+        nav{
+            ul{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                li {
+                    margin-left: 20px;
+
+                    a {
+                        color: #333;
+                        transition: color 0.3s ease;
+
+                        &:hover {
+                            color: #007bff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Estilos para Seções Específicas */
+    .home {
+        padding: 50px 0;
+
+        .hero {
+            text-align: center;
+
+            h2 {
+                font-size: 2em;
+                margin-bottom: 1em;
+            }
+
+            p {
+                font-size: 1.2em;
+                line-height: 1.5;
+                margin-bottom: 2em;
+            }
+
+            .btn {
+                display: inline-block;
+                padding: 10px 20px;
+                background-color: #007bff;
+                color: #fff;
+                text-decoration: none;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #0056b3;
+                }
+            }
+        }
+    }
+
+    .courses {
+        padding: 50px 0;
+
+        .course {
+            background-color: #fff;
+            padding: 50px;
+            border-radius: 5px;
+            text-align: center;
+
+            h3 {
+                font-size: 1.5em;
+                margin-bottom: 1em;
+            }
+
+            p {
+                font-size: 1em;
+                line-height: 1.5;
+                margin-bottom: 1em;
+            }
+
+            a {
+                display: inline-block;
+                padding: 5px 10px;
+                background-color: #007bff;
+                color: #fff;
+                text-decoration: none;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #0056b3;
+                }
+            }
+        }
+    }
+    
+    .community {
+        padding: 50px 0;
+        text-align: center;
+
+        .community-features {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        
+            div{
+                width: 200px;
+                height: 200px;
+                margin: 40px 20px;
+            }
+        }
+    }
+
+    .contact {
+        padding: 50px 0;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 5px;
+
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 15px 0;
+            width: 400px;
+            height: 400px;
+            margin: auto;
+
+            label{
+                text-align: left;
+                margin-bottom: 10px;
+            }
+
+            input{
+                margin-bottom: 10px;
+                padding: 10px;
+            }
+
+            textarea{
+                margin-bottom: 10px;
+                height: 200px;
+                padding: 10px;
+            }
+
+            button{
+                padding: 10px;
+                background-color: #007bff;
+                color: #fff;
+                text-decoration: none;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #0056b3;
+                }
+            }
+        }
+    }
+
+    footer {
+        background-color: #f0f0f0;
+        text-align: center;
+        padding: 20px 0;
+    }
+}
